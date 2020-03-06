@@ -11,6 +11,7 @@ public class HelloController {
     @GetMapping("/hello")
     public String hello(@RequestParam("name") String name, Model model) {
         model.addAttribute("name",name);
+        System.out.println("111111");
         return "hello";
     }
 }
